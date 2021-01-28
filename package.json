@@ -1,0 +1,20 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "team proflie generator",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JZSweet/Team-Profile-Generator.git"
+  },
+  "author": "JZSweet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JZSweet/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/JZSweet/Team-Profile-Generator#readme"
+}

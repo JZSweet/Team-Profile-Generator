@@ -2,9 +2,9 @@
   "name": "team-profile-generator",
   "version": "1.0.0",
   "description": "team proflie generator",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node App.js",
     "test": "jest"
   },
   "repository": {
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/JZSweet/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/JZSweet/Team-Profile-Generator#readme"
+  "homepage": "https://github.com/JZSweet/Team-Profile-Generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {}
 }

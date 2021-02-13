@@ -14,7 +14,7 @@ function start() {
         {
             type: "list",
             name: "role",
-            message: "what role is this person?",
+            message: "Please select from following options to begin this application.",
             choices: ["manager", "engineer", "intern", "exit", "build team"]
         }
     ).then(data => {
@@ -74,23 +74,23 @@ function buildEngineer() {
         {
             type: "input",
             name: "id",
-            message: "what is the manager's id?",
+            message: "what is the engineer's id?",
         },
         {
             type: "input",
             name: "email",
-            message: "what is the manager's email?",
+            message: "what is the engineer's email?",
         },
         {
             type: "input",
-            name: "number",
-            message: "what is the manager's office number?",
+            name: "Github",
+            message: "what is the engineer's GitHub username?",
         }
     ]).then(data => {
         console.log(data.name)
-        let manager = new Manager(data.name, data.id, data.email, data.number);
-        team.push(manager);
-        console.log(manager)
+        let engineer = new Engineer(data.name, data.id, data.email, data.Github);
+        team.push(engineer);
+        console.log(engineer)
         start();
     })
 };
@@ -99,28 +99,28 @@ function buildIntern() {
         {
             type: "input",
             name: "name",
-            message: "what is the engineer's name?",
+            message: "what is the intern's name?",
         },
         {
             type: "input",
             name: "id",
-            message: "what is the manager's id?",
+            message: "what is the intern's id?",
         },
         {
             type: "input",
             name: "email",
-            message: "what is the manager's email?",
+            message: "what is the intern's email?",
         },
         {
             type: "input",
-            name: "number",
-            message: "what is the manager's office number?",
+            name: "school",
+            message: "what is the intern's school name?",
         }
     ]).then(data => {
         console.log(data.name)
-        let manager = new Manager(data.name, data.id, data.email, data.number);
-        team.push(manager);
-        console.log(manager)
+        let intern = new Intern(data.name, data.id, data.email, data.school);
+        team.push(intern);
+        console.log(intern)
         start();
     })
 };
